@@ -9,14 +9,20 @@ Once you have :ref:`installed<Installation>` the add-on, you can get started by 
 Load Main File
 *************************
 
-    .. image:: ../images/n-panel.jpg
-       :alt: Shipwright Properties Panel
+.. image:: ../images/n-panel.jpg
+    :alt: Shipwright Properties Panel
 
 
 #. Load the **shipright.x.x.x.blend** file into Blender.
 #. Make sure that the main object ('Shipwright') is selected.
 
-There are :ref:`other files available<Sample Files>` in different configurations.
+Alternative file
+==========================================
+
+.. image:: ../images/head_demo.jpg
+    :alt: Shipwright Properties Panel
+
+An alternative file that uses the :ref:`Cast Feature<cast_modifier>` to create a more spherical shape is also supplied under **shipwright.head..x.x.x.blend**.
 
 ****************************************
 Create a new object

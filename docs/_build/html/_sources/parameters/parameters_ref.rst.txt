@@ -155,6 +155,9 @@ When randomly choosing another face to extrude while creating the object, this w
 * **Bevel Width**: The width of the desired bevel effect on the overall generated object's edges.
 * **Bevel Segments**: The number of segments in the bevel effect.
 
+.. _cast_modifier:
+
+
 **Cast Modifier**
 
 .. image:: ../images/cast_modifer.jpg
@@ -164,8 +167,6 @@ This is used to apply a `Cast Modifier <https://docs.blender.org/manual/en/lates
 
 * **Cast Amount**: The amount of deformation the cast modifier applies.
 * **Cast Type (Sphere/Cylinder/Coboid)**: This is the type of deformation shape that the cast modifier applies.
-
-
 
 Adding Plates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

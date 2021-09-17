@@ -10,7 +10,7 @@ The Shipwright V2 documentation
 .. image:: images/shipwright_main.jpg
   :alt: Welcome to the Shipwright
 
-Automatically create sci fi objects with |The Shipwright|: a |Blender| add-on that combines the |Shape Generator| and the |Plating Generator| add-ons into one.
+Automatically create sci fi objects with |The Shipwright|: a |Blender| add-on that combines the |Shape Generator| and the |Plating Generator| add-ons into one custom set up.
 
 .. |The Shipwright| raw:: html
 
@@ -59,7 +59,6 @@ Features
    baking/baking
    iterator/iterator
    actions/actions
-   samples/samples_list
    contact/contact
 
 Indices and tables
