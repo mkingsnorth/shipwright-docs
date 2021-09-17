@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-===============================
+############################################
 The Shipwright V2 documentation
-===============================
+############################################
 
 .. image:: images/shipwright_main.jpg
   :alt: Welcome to the Shipwright
@@ -15,7 +15,6 @@ Automatically create sci fi objects with |The Shipwright|: a |Blender| add-on th
 .. |The Shipwright| raw:: html
 
    <a href="https://blendermarket.com/products/shipwright" target="_blank"><b>The Shipwright</b></a>
-
 
 .. |Blender| raw:: html
 
@@ -56,7 +55,12 @@ Features
 
    usage/installation
    usage/quickstart
-
+   parameters/parameters_ref
+   baking/baking
+   iterator/iterator
+   actions/actions
+   samples/samples_list
+   contact/contact
 
 Indices and tables
 ==================

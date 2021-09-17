@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quick Start &mdash; Shipwright  documentation</title>
+  <title>Getting Started &mdash; Shipwright  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,6 +18,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Parameters" href="../parameters/parameters_ref.html" />
     <link rel="prev" title="Installation" href="installation.html" /> 
 </head>
 
@@ -39,10 +40,18 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#well">Well?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#load-main-file">Load Main File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-new-object">Create a new object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accessing-parameters">Accessing Parameters</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../parameters/parameters_ref.html">Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baking/baking.html">Joining, Smoothing, and Baking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../iterator/iterator.html">Iterator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../actions/actions.html">Actions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../samples/samples_list.html">Sample Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contact/contact.html">Contact</a></li>
 </ul>
 
         </div>
@@ -59,7 +68,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Quick Start</li>
+      <li>Getting Started</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/usage/quickstart.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -69,12 +78,35 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="quick-start">
-<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline"></a></h1>
-<p>Yes</p>
-<section id="well">
-<h2>Well?<a class="headerlink" href="#well" title="Permalink to this headline"></a></h2>
-<p>Well then?</p>
+  <section id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline"></a></h1>
+<p>Once you have <a class="reference internal" href="installation.html#installation"><span class="std std-ref">installed</span></a> the add-on, you can get started by <a class="reference internal" href="#load-main-file"><span class="std std-ref">loading the main sample file</span></a> or by <a class="reference internal" href="#create-a-new-object"><span class="std std-ref">adding your own Shipwright object</span></a>.  You can then <a class="reference internal" href="#accessing-parameters"><span class="std std-ref">access the parameters</span></a> from the properties panel.</p>
+<section id="load-main-file">
+<h2>Load Main File<a class="headerlink" href="#load-main-file" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><img alt="Shipwright Properties Panel" src="../_images/n-panel.jpg" />
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Load the <strong>shipright.x.x.x.blend</strong> file into Blender.</p></li>
+<li><p>Make sure that the main object (‘Shipwright’) is selected.</p></li>
+</ol>
+<p>There are <a class="reference internal" href="../samples/samples_list.html#sample-files"><span class="std std-ref">other files available</span></a> in different configurations.</p>
+</section>
+<section id="create-a-new-object">
+<h2>Create a new object<a class="headerlink" href="#create-a-new-object" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/add_shipwright.jpg"><img alt="Shipwright Add Menu" src="../_images/add_shipwright.jpg" style="width: 50%;" /></a>
+</div></blockquote>
+<p>You can alternatively create a new <em>Shipwright</em> object through the <em>Add</em> menu in Blender.  This menu is either accessible through the top of the 3D view or by pressing <em>Shift+A</em>.</p>
+</section>
+<section id="accessing-parameters">
+<h2>Accessing Parameters<a class="headerlink" href="#accessing-parameters" title="Permalink to this headline"></a></h2>
+<ol class="arabic simple">
+<li><p>Access the “Shipwright” tab on the right hand side of the viewport by pressing the <em>n</em> key in the viewport.  This is the main panel that controls all the parameters for the object.</p></li>
+<li><p>If the Shipwright object is selected, you should see all the parameters that make up the Shipwright object.</p></li>
+<li><p>Try changing one of these parameters, such as the <strong>Master Seed</strong> value. You should see the object change shape to a new random configuration.</p></li>
+</ol>
+<p>See the <a class="reference internal" href="../parameters/parameters_ref.html#parameters"><span class="std std-ref">Parameters</span></a> section for more.</p>
 </section>
 </section>
 
@@ -83,6 +115,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../parameters/parameters_ref.html" class="btn btn-neutral float-right" title="Parameters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
