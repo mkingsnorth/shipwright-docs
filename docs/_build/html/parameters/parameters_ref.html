@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parameters &mdash; Shipwright  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Joining, Smoothing, and Baking" href="../baking/baking.html" />
+    <link rel="prev" title="Getting Started" href="../usage/quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Shipwright
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../usage/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/quickstart.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Parameters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#main-controls">Main Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#levels">Levels</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#level-general-properties">Level General Properties</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#randomness">Randomness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#start-end-scale">Start/End Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#start-end-rotation">Start/End Rotation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#material-override">Material Override</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#generate-uvs">Generate UVs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#level-types">Level Types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#custom-objects">Custom Objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#collection-of-objects">Collection of Objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#generated-objects">Generated Objects</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../baking/baking.html">Joining, Smoothing, and Baking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../iterator/iterator.html">Iterator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../actions/actions.html">Actions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../samples/samples_list.html">Sample Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contact/contact.html">Contact</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Shipwright</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Parameters</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/parameters/parameters_ref.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="parameters">
+<h1>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline"></a></h1>
+<section id="main-controls">
+<h2>Main Controls<a class="headerlink" href="#main-controls" title="Permalink to this headline"></a></h2>
+<img alt="Main Controls" src="../_images/main_controls.jpg" />
+<ul class="simple" id="master-seed">
+<li><p><strong>Master Seed</strong>: This controls the overall randomisation of the generated objects.</p></li>
+<li><p><strong>Mirror X/Y/Z</strong>: Mirror the overall object shape in different directions.</p></li>
+<li><p><strong>Lattice U/V/W</strong>: The add-on creates a deformation “lattice” around the object. You can select this lattice object, move its points, and the overall shape will deform further.  These parameters control the number of points in the deformation lattice.</p></li>
+</ul>
+</section>
+<section id="levels">
+<h2>Levels<a class="headerlink" href="#levels" title="Permalink to this headline"></a></h2>
+<p>Levels are similar to layers in Photoshop or Gimp where each layer builds on top of the other.  In the Shipwright, objects are first created on the base layer and then subsequent layers will randomly scatter objects across the lower layers.</p>
+<section id="level-general-properties">
+<h3>Level General Properties<a class="headerlink" href="#level-general-properties" title="Permalink to this headline"></a></h3>
+<p>These properties apply to any level type.</p>
+<img alt="Level General Properties" src="../_images/level_general_props.jpg" />
+<section id="randomness">
+<h4>Randomness<a class="headerlink" href="#randomness" title="Permalink to this headline"></a></h4>
+<ul class="simple">
+<li><p><strong>Random Seed</strong>:  The random seed used to control the randomness of this specific layer.  This is used in combination with the <a class="reference internal" href="#master-seed"><span class="std std-ref">master seed</span></a> parameter.</p></li>
+</ul>
+<ul class="simple" id="number-parm">
+<li><p><strong>Number</strong>:  This is the number of objects that are randomly scattered across the surface for this level.</p></li>
+</ul>
+</section>
+<section id="start-end-scale">
+<h4>Start/End Scale<a class="headerlink" href="#start-end-scale" title="Permalink to this headline"></a></h4>
+<p>This controls the range of different scales for each of the objects created on this level.</p>
+<ul class="simple">
+<li><p><strong>Start Scale</strong>: This is the minimum range of the scale.</p></li>
+<li><p><strong>Start Scale</strong>: This is the maximum range of the scale.</p></li>
+</ul>
+</section>
+<section id="start-end-rotation">
+<h4>Start/End Rotation<a class="headerlink" href="#start-end-rotation" title="Permalink to this headline"></a></h4>
+<p>This controls the range of different rotations for each of the objects created on this level.</p>
+<ul class="simple">
+<li><p><strong>Start Rotation</strong>: This is the minimum range of the rotation.</p></li>
+<li><p><strong>Start Rotation</strong>: This is the maximum range of the rotation.</p></li>
+</ul>
+</section>
+<section id="material-override">
+<h4>Material Override<a class="headerlink" href="#material-override" title="Permalink to this headline"></a></h4>
+<p>This will override the default material for the objects on this layer.</p>
+</section>
+<section id="generate-uvs">
+<h4>Generate UVs<a class="headerlink" href="#generate-uvs" title="Permalink to this headline"></a></h4>
+<p>This will automatically create UVs for the objects using Blender’s UV Smart Projection feature.</p>
+<ul class="simple">
+<li><p><strong>UV Smart Projection Limit</strong>: This is used by the UV Smart Projection to determine how much of a bend on the surface will determine a UV island.  The default setting is recommended.</p></li>
+</ul>
+</section>
+</section>
+<section id="level-types">
+<h3>Level Types<a class="headerlink" href="#level-types" title="Permalink to this headline"></a></h3>
+<p>Each Level has a different type of object you can scatter on the surface.  You can choose from:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#custom-objects"><span class="std std-ref">Custom Objects</span></a>.</p></li>
+<li><p><a class="reference internal" href="#collection-of-objects"><span class="std std-ref">Collection of Objects</span></a>.</p></li>
+<li><p><a class="reference internal" href="#generated-objects"><span class="std std-ref">Generated Objects</span></a>.</p></li>
+</ul>
+<section id="custom-objects">
+<h4>Custom Objects<a class="headerlink" href="#custom-objects" title="Permalink to this headline"></a></h4>
+<img alt="Custom Object Panel" src="../_images/custom_object_panel.jpg" />
+<p>You can  add your own in-scene objects.</p>
+<ul class="simple">
+<li><p><strong>Object</strong>: The object you wish to be used when scattering objects onto the layers below.</p></li>
+</ul>
+</section>
+<section id="collection-of-objects">
+<h4>Collection of Objects<a class="headerlink" href="#collection-of-objects" title="Permalink to this headline"></a></h4>
+<img alt="Collections Panel" src="../_images/collections_panel.jpg" />
+<p>You can also use an in-scene collection of objects the scatter onto the surface.</p>
+<ul class="simple">
+<li><p><strong>Collection</strong>: The collection of objects to be used for this layer when scattering objects onto the surface of the lower layers.</p></li>
+</ul>
+<p>You can sample the objects in two ways:</p>
+<ul>
+<li><p><strong>All</strong>: This will use all the objects in the collection and scatter them onto the surface.</p></li>
+<li><p><strong>Samples</strong>: This will use a specified number of objects from the collection specified by the <a class="reference internal" href="#number-parm"><span class="std std-ref">number</span></a> parameter in the General Parameters section.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Allow Duplicates</strong>: When picking objects from the collection, allow for picking the same object more than once.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="generated-objects">
+<h4>Generated Objects<a class="headerlink" href="#generated-objects" title="Permalink to this headline"></a></h4>
+<img alt="General Object Params" src="../_images/gen_obj_parms.jpg" />
+<p>This uses the <a href="https://blendermarket.com/products/shape-generator" target="_blank">Shape Generator</a> add-on to create randomly created objects across the surface.  Each shape will be assigned a unique seed number to make it different.</p>
+<p>You can also optionally add a Plating effect to the shape with the <a href="https://blendermarket.com/products/plating-generator" target="_blank">Plating Generator</a> add-on.</p>
+<section id="generated-object-parameters">
+<h5>Generated Object Parameters<a class="headerlink" href="#generated-object-parameters" title="Permalink to this headline"></a></h5>
+<p><strong>Scaling</strong></p>
+<p>This controls the scale of each generated object.  Useful for creating shapes of a consistent proportion, e.g. tall buildings or long spaceships.</p>
+<p><strong>Shape Parameters</strong></p>
+<ul class="simple">
+<li><p><strong>Min Extrude Amount</strong>: The minimum number of face extrusions within a generated shape.</p></li>
+<li><p><strong>Max Extrude Amount</strong>: The maxmum number of face extrusions within a generated shape.</p></li>
+<li><p><strong>Min Extrude Length</strong>: The minimum length of a face extrusion.</p></li>
+<li><p><strong>Max Extrude Length</strong>: The maximum length of a face extrusion.</p></li>
+<li><p><strong>Min Taper</strong>: The minimum amount of taper for each extrusion.  Smaller values will increase the amount of tapering.</p></li>
+<li><p><strong>Max Taper</strong>: The maximum amount of taper for each extrusion.  Larger values will decrease the amount of tapering.</p></li>
+<li><p><strong>Min Rotation</strong>: The minimum amount of rotation applied to each extrusion.</p></li>
+<li><p><strong>Max Rotation</strong>: The maximum amount of rotation applied to each extrusion.</p></li>
+<li><p><strong>Min Slide</strong>: The minimum amount of sliding, or sloping, applied to each extrusion.</p></li>
+<li><p><strong>Max Slide</strong>: The maximum amount of sliding, or sloping, applied to each extrusion.</p></li>
+</ul>
+<p><strong>When Choosing a face, favour…</strong></p>
+<p>When randomly choosing another face to extrude while creating the object, this will choose the prefered direction of the face that is chosen.  For instance, a value of (1,0,0) will only favour a face pointing towards the X direction.</p>
+<ul class="simple">
+<li><p><strong>Shape Subdivisions</strong>: How many sub-faces a face is divided into.</p></li>
+<li><p><strong>Bevel Width</strong>: The width of the desired bevel effect on the overall generated object’s edges.</p></li>
+<li><p><strong>Bevel Segments</strong>: The number of segments in the bevel effect.</p></li>
+</ul>
+<p><strong>Cast Modifier</strong></p>
+<img alt="Cast Modifier" src="../_images/cast_modifer.jpg" />
+<p>This is used to apply a <a class="reference external" href="https://docs.blender.org/manual/en/latest/modeling/modifiers/deform/cast.html">Cast Modifier</a>  that will deform the overall shape of the objects being applied.</p>
+<ul class="simple">
+<li><p><strong>Cast Amount</strong>: The amount of deformation the cast modifier applies.</p></li>
+<li><p><strong>Cast Type (Sphere/Cylinder/Coboid)</strong>: This is the type of deformation shape that the cast modifier applies.</p></li>
+</ul>
+</section>
+<section id="adding-plates">
+<h5>Adding Plates<a class="headerlink" href="#adding-plates" title="Permalink to this headline"></a></h5>
+<p>You can optionally add a Plating effect to the objects using the <a href="https://blendermarket.com/products/plating-generator" target="_blank">Plating Generator</a> Add-On.</p>
+<ul class="simple">
+<li><p><strong>Plates Random Seed</strong>:  The random number used to generated different plating patterns.</p></li>
+<li><p><strong>Plating Amount</strong>: The amount of cuts to make the plate.</p></li>
+<li><p><strong>Plating Groove Width</strong>: The width of the grooves of the plates.</p></li>
+<li><p><strong>Plating Groove Depth</strong>: The depth of the grooves.</p></li>
+<li><p><strong>Plating Height Random Seed</strong>: The random number used to vary the heights of the plates.</p></li>
+<li><p><strong>Plating Min Height</strong>: The minimum height of the plates.</p></li>
+<li><p><strong>Plating Max Height</strong>: The maximum height of the plates.</p></li>
+<li><p><strong>Plating Face Area</strong>: The minimum size of the faces for the plating effect to be applied to.</p></li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../usage/quickstart.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../baking/baking.html" class="btn btn-neutral float-right" title="Joining, Smoothing, and Baking" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Mark Kingsnorth.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joining, Smoothing, and Baking &mdash; Shipwright  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Iterator" href="../iterator/iterator.html" />
+    <link rel="prev" title="Parameters" href="../parameters/parameters_ref.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Shipwright
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../usage/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/quickstart.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameters/parameters_ref.html">Parameters</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Joining, Smoothing, and Baking</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#joining">Joining</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#smoothing">Smoothing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#baking">Baking</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../iterator/iterator.html">Iterator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../actions/actions.html">Actions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../samples/samples_list.html">Sample Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contact/contact.html">Contact</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Shipwright</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Joining, Smoothing, and Baking</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/baking/baking.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="joining-smoothing-and-baking">
+<h1>Joining, Smoothing, and Baking<a class="headerlink" href="#joining-smoothing-and-baking" title="Permalink to this headline"></a></h1>
+<img alt="A Shipwright Object Before Baking" src="../_images/baking_intro_before.jpg" />
+<img alt="A Baked Shipwright Object" src="../_images/baking_intro.jpg" />
+<p>Because the Shipwright creates multiple objects, the joining and baking operations are designed to help you merge all these objects into one mesh and to apply smoothing operations if you choose to further sculpt or deform the image in any way.</p>
+<section id="joining">
+<h2>Joining<a class="headerlink" href="#joining" title="Permalink to this headline"></a></h2>
+<img alt="Join Object button" src="../_images/join_obj_btn.jpg" />
+<p>The <em>Join</em> button when activated will automatically combine all the objects created in the Shipwright into one.</p>
+<figure class="align-default" id="id1">
+<img alt="A Shipwright Joined" src="../_images/unjoined.jpg" />
+<figcaption>
+<p><span class="caption-text">The Shipwright unjoined with multiple objects.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
+<img alt="A Shipwright Unjoined" src="../_images/joined.jpg" />
+<figcaption>
+<p><span class="caption-text">The Shipwright merged together with the Join operation.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="smoothing">
+<h2>Smoothing<a class="headerlink" href="#smoothing" title="Permalink to this headline"></a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The Smoothing operation is a processor intensive operation at lower Voxel settings, and can cause Blender to freeze for a long period of time.</p>
+<p>Materials are not carried over during the operation as the object’s topology is completely remapped.</p>
+</div>
+<figure class="align-default" id="id3">
+<img alt="A Shipwright with Smoothing Operations applied" src="../_images/smoothing_op.jpg" />
+<figcaption>
+<p><span class="caption-text">A Shipwright object with Smoothing Operations applied.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<img alt="A Shipwright with Smoothing Operations applied" src="../_images/smoothing_props.jpg" />
+<p>When <a class="reference internal" href="#joining"><span class="std std-ref">Joined</span></a> into one object, the Shipwright can automatically add the <a class="reference external" href="https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/remesh.html">Remesh</a>  and <a class="reference external" href="https://docs.blender.org/manual/en/latest/modeling/modifiers/deform/smooth.html">Smooth</a> modifiers to the object when the <strong>Apply Smoothing</strong> button is activated.</p>
+<p>This creates smoothed mesh that can then be used for sculpting.</p>
+<p>Parameters are as follows:</p>
+<ul class="simple">
+<li><p><strong>Voxel Size</strong>: The <em>Remesh</em> modifier uses Voxels (3D Pixels) to determine how to alter the mesh topology.  Smaller values will produce higher levels of detail but will take longer to process.  Be careful not to make the values too low (e.g., less than 0.01).</p></li>
+<li><p><strong>Smooth Iterations</strong>:  This controls the number of times the <em>smooth</em> operation is applied to the retoplogised mesh.  Higher levels will produce a smoother result.</p></li>
+</ul>
+</section>
+<section id="baking">
+<h2>Baking<a class="headerlink" href="#baking" title="Permalink to this headline"></a></h2>
+<img alt="Final Baking Buttons" src="../_images/baking_btns.jpg" />
+<p>If you are ready for your Shipwright object to be taken to the next stage of editing in Blender and no longer wish for it to be changed through the panel, you can perform one of the following operations:</p>
+<ul class="simple">
+<li><p><strong>Remove Properties</strong>:  This wll remove the properties from the object or objects so that the panel will no longer change it, leaving the deform lattice and any mirroring or other modifiers intact.</p></li>
+<li><p><strong>Collapse Shipwright</strong>: This will remove the properties and also collapse all modifiers for the Shipwright object.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../parameters/parameters_ref.html" class="btn btn-neutral float-left" title="Parameters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../iterator/iterator.html" class="btn btn-neutral float-right" title="Iterator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Mark Kingsnorth.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iterator &mdash; Shipwright  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Actions" href="../actions/actions.html" />
+    <link rel="prev" title="Joining, Smoothing, and Baking" href="../baking/baking.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Shipwright
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../usage/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/quickstart.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../parameters/parameters_ref.html">Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../baking/baking.html">Joining, Smoothing, and Baking</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Iterator</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-iterator">Using the Iterator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cancelling-the-operation">Cancelling the operation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../actions/actions.html">Actions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../samples/samples_list.html">Sample Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contact/contact.html">Contact</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Shipwright</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Iterator</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/iterator/iterator.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="iterator">
+<h1>Iterator<a class="headerlink" href="#iterator" title="Permalink to this headline"></a></h1>
+<img alt="Iterator Image Output" src="../_images/iterator_intro.jpg" />
+<p>To assess many possible combinations, the Iterator feature can use the camera in your scene to automatically render a range of Shipwright master seed combinations to a directory of your choosing.</p>
+<figure class="align-default" id="id1">
+<img alt="Iterator Properties" src="../_images/iterator_parms.jpg" />
+<figcaption>
+<p><span class="caption-text">Iterator Controls.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<section id="using-the-iterator">
+<h2>Using the Iterator<a class="headerlink" href="#using-the-iterator" title="Permalink to this headline"></a></h2>
+<p>The iterator will produce a set of images, each image is a preview of the Shipwright when it is in that seed configuration.</p>
+<p>The name of the filename will display the master seed value used.</p>
+<ul class="simple">
+<li><p><strong>Seed Range</strong>: set the master seed range used to render out different combinations.</p></li>
+<li><p><strong>File Path</strong>: The output directory for the file images.</p></li>
+<li><p><strong>Render Engine</strong>: Optionally choose a render engine different to the main scene.  The Iterator will then use the settings of the alternative renderer.</p></li>
+<li><p><strong>Start</strong>: start an iterator process.  Whilst the images are rendering, Blender may appear to freeze.  You can check whether the images are being output by navigating to the output directory to see if the images are being created.</p></li>
+</ul>
+</section>
+<section id="cancelling-the-operation">
+<h2>Cancelling the operation<a class="headerlink" href="#cancelling-the-operation" title="Permalink to this headline"></a></h2>
+<p>Whilst running, there is a file called <strong>running.ack</strong> that you can use to stop the iterator and unfreeze Blender.  Remove running.ack, and after rendering an image Blender will check for the presence of this file.  If this file no longer exists, it will cancel the operation.</p>
+<p>This is similar to the iterator function in <a class="reference external" href="https://blendermarket.com/products/kit-ops-synth">KIT OPS SYNTH</a>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../baking/baking.html" class="btn btn-neutral float-left" title="Joining, Smoothing, and Baking" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../actions/actions.html" class="btn btn-neutral float-right" title="Actions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Mark Kingsnorth.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
