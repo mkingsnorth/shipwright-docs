@@ -21,7 +21,30 @@ Main Controls
 Levels
 *****************
 
+.. figure:: ../images/level_entry.jpg
+    :alt: Level Entry Settings
+
+    Level Entry Settings
+
 Levels are similar to layers in Photoshop or Gimp where each layer builds on top of the other.  In the Shipwright, objects are first created on the base layer and then subsequent layers will randomly scatter objects across the lower layers.
+
+The top level display and controls are:
+
+* **Level Icon**: The icon denoting what type of object this level is using (e.g. Object/Collection/Generated)
+* **Level Color**: Change user interface color of the level for managing multiple layers.
+* **Level Name**: Name of the level.
+* **Relative Scale**: The relative scale for each object in the level.
+* **Subtract Level**: Use a Boolean *subtract* operation to use the objects on this level as boolean cutters.
+* **Level Visibility**: Whether the level objects are visible in the scene.
+* **Delete Level**: Delete this level entry.
+
+You also have the options to:
+
+* **Add**: Add a new Level.
+* **Copy**: Copy a Level and its settings.
+* **Move Up/Down**: Move the level positon with the up or down arrows.
+
+By clicking on the level, this will display the specific properties for that level described below.
 
 Level General Properties
 ==========================================
@@ -79,6 +102,11 @@ Each Level has a different type of object you can scatter on the surface.  You c
 * :ref:`Collection of Objects`.
 * :ref:`Generated Objects`.
 
+You can also optionally add a Plating effect to the shape with the |Plating Generator| add-on.
+
+.. |Plating Generator| raw:: html
+
+   <a href="https://blendermarket.com/products/plating-generator" target="_blank">Plating Generator</a>
 
 Custom Objects
 -------------------
@@ -116,15 +144,13 @@ Generated Objects
 
 This uses the |Shape Generator| add-on to create randomly created objects across the surface.  Each shape will be assigned a unique seed number to make it different.
 
-You can also optionally add a Plating effect to the shape with the |Plating Generator| add-on.
+
 
 .. |Shape Generator| raw:: html
 
    <a href="https://blendermarket.com/products/shape-generator" target="_blank">Shape Generator</a>
 
-.. |Plating Generator| raw:: html
 
-   <a href="https://blendermarket.com/products/plating-generator" target="_blank">Plating Generator</a>
 
 
 Generated Object Parameters
@@ -171,7 +197,7 @@ This is used to apply a `Cast Modifier <https://docs.blender.org/manual/en/lates
 Adding Plates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can optionally add a Plating effect to the objects using the |Plating Generator| Add-On.
+You can optionally add a Plating effect to the objects using the |Plating Generator| Add-On.  Note that faces on the original objects need to be selected and have quad (4-sided) edges.
 
 * **Plates Random Seed**:  The random number used to generated different plating patterns.
 * **Plating Amount**: The amount of cuts to make the plate.

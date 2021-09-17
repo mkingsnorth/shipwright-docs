@@ -105,7 +105,30 @@
 </section>
 <section id="levels">
 <h2>Levels<a class="headerlink" href="#levels" title="Permalink to this headline"></a></h2>
+<figure class="align-default" id="id2">
+<img alt="Level Entry Settings" src="../_images/level_entry.jpg" />
+<figcaption>
+<p><span class="caption-text">Level Entry Settings</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 <p>Levels are similar to layers in Photoshop or Gimp where each layer builds on top of the other.  In the Shipwright, objects are first created on the base layer and then subsequent layers will randomly scatter objects across the lower layers.</p>
+<p>The top level display and controls are:</p>
+<ul class="simple">
+<li><p><strong>Level Icon</strong>: The icon denoting what type of object this level is using (e.g. Object/Collection/Generated)</p></li>
+<li><p><strong>Level Color</strong>: Change user interface color of the level for managing multiple layers.</p></li>
+<li><p><strong>Level Name</strong>: Name of the level.</p></li>
+<li><p><strong>Relative Scale</strong>: The relative scale for each object in the level.</p></li>
+<li><p><strong>Subtract Level</strong>: Use a Boolean <em>subtract</em> operation to use the objects on this level as boolean cutters.</p></li>
+<li><p><strong>Level Visibility</strong>: Whether the level objects are visible in the scene.</p></li>
+<li><p><strong>Delete Level</strong>: Delete this level entry.</p></li>
+</ul>
+<p>You also have the options to:</p>
+<ul class="simple">
+<li><p><strong>Add</strong>: Add a new Level.</p></li>
+<li><p><strong>Copy</strong>: Copy a Level and its settings.</p></li>
+<li><p><strong>Move Up/Down</strong>: Move the level positon with the up or down arrows.</p></li>
+</ul>
+<p>By clicking on the level, this will display the specific properties for that level described below.</p>
 <section id="level-general-properties">
 <h3>Level General Properties<a class="headerlink" href="#level-general-properties" title="Permalink to this headline"></a></h3>
 <p>These properties apply to any level type.</p>
@@ -155,6 +178,7 @@
 <li><p><a class="reference internal" href="#collection-of-objects"><span class="std std-ref">Collection of Objects</span></a>.</p></li>
 <li><p><a class="reference internal" href="#generated-objects"><span class="std std-ref">Generated Objects</span></a>.</p></li>
 </ul>
+<p>You can also optionally add a Plating effect to the shape with the <a href="https://blendermarket.com/products/plating-generator" target="_blank">Plating Generator</a> add-on.</p>
 <section id="custom-objects">
 <h4>Custom Objects<a class="headerlink" href="#custom-objects" title="Permalink to this headline"></a></h4>
 <img alt="Custom Object Panel" src="../_images/custom_object_panel.jpg" />
@@ -186,7 +210,6 @@
 <h4>Generated Objects<a class="headerlink" href="#generated-objects" title="Permalink to this headline"></a></h4>
 <img alt="General Object Params" src="../_images/gen_obj_parms.jpg" />
 <p>This uses the <a href="https://blendermarket.com/products/shape-generator" target="_blank">Shape Generator</a> add-on to create randomly created objects across the surface.  Each shape will be assigned a unique seed number to make it different.</p>
-<p>You can also optionally add a Plating effect to the shape with the <a href="https://blendermarket.com/products/plating-generator" target="_blank">Plating Generator</a> add-on.</p>
 <section id="generated-object-parameters">
 <h5>Generated Object Parameters<a class="headerlink" href="#generated-object-parameters" title="Permalink to this headline"></a></h5>
 <p><strong>Scaling</strong></p>
@@ -221,7 +244,7 @@
 </section>
 <section id="adding-plates">
 <h5>Adding Plates<a class="headerlink" href="#adding-plates" title="Permalink to this headline"></a></h5>
-<p>You can optionally add a Plating effect to the objects using the <a href="https://blendermarket.com/products/plating-generator" target="_blank">Plating Generator</a> Add-On.</p>
+<p>You can optionally add a Plating effect to the objects using the <a href="https://blendermarket.com/products/plating-generator" target="_blank">Plating Generator</a> Add-On.  Note that faces on the original objects need to be selected and have quad (4-sided) edges.</p>
 <ul class="simple">
 <li><p><strong>Plates Random Seed</strong>:  The random number used to generated different plating patterns.</p></li>
 <li><p><strong>Plating Amount</strong>: The amount of cuts to make the plate.</p></li>

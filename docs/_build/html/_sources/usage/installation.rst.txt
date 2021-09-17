@@ -49,12 +49,12 @@ Main Installation
 #. Go to *Edit* -> *Preferences*.
 #. Select the *Add-ons* tab on the left it is not already.
 #. Select the *Install...* button along the top.
-#. This will open a file dialog where you should navigate to where you have downloaded the "Shipwright" zip file.  This file should not be unzipped.
+#. This will open a file dialog where you should navigate to where you have downloaded the **Shipwright** zip file.  This file should not be unzipped.
 #. Then, click the *Install add-on from file* button.
 #. Search for the add-on by typing *Shipwright* in the search box if it does not already appear.
 #. Make sure the checkbox next to the Add-on (*Add Mesh: Shipwright*) is ticked.
 
-Your set up should be as follows:
+Your set up should be as follows so far:
 
 .. image:: ../images/install_screen2.jpg
   :alt: Shipwright Installed
