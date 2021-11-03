@@ -26,13 +26,14 @@ Levels
 
     Level Entry Settings
 
-Levels are similar to layers in Photoshop or Gimp where each layer builds on top of the other.  In the Shipwright, objects are first created on the base layer and then subsequent layers will randomly scatter objects across the lower layers.
+Levels are similar to layers in Photoshop or Gimp where each layer builds on top of the other.  In the Shipwright, objects are first created on the base level and then subsequent levels will randomly scatter objects across the lower levels.
 
 The top level display and controls are:
 
 * **Level Icon**: The icon denoting what type of object this level is using (e.g. Object/Collection/Generated)
-* **Level Color**: Change user interface color of the level for managing multiple layers.
+* **Level Color**: Change user interface color of the level for managing multiple levels.
 * **Level Name**: Name of the level.
+* **Level Seed**: The individual :ref:`random seed value<Randomness>` for this level.
 * **Relative Scale**: The relative scale for each object in the level.
 * **Subtract Level**: Use a Boolean *subtract* operation to use the objects on this level as boolean cutters.
 * **Level Visibility**: Whether the level objects are visible in the scene.
@@ -57,7 +58,7 @@ These properties apply to any level type.
 Randomness
 ------------------
 
-* **Random Seed**:  The random seed used to control the randomness of this specific layer.  This is used in combination with the :ref:`master seed<master_seed>` parameter.
+* **Random Seed**:  The random seed used to control the randomness of this specific level.  This is used in combination with the :ref:`master seed<master_seed>` parameter.
 
 .. _number_parm:
 
@@ -83,7 +84,7 @@ This controls the range of different rotations for each of the objects created o
 Material Override 
 -----------------------
 
-This will override the default material for the objects on this layer.
+This will override the default material for the objects on this level.
 
 Generate UVs
 ------------------
@@ -116,7 +117,7 @@ Custom Objects
 
 You can  add your own in-scene objects.
 
-* **Object**: The object you wish to be used when scattering objects onto the layers below.
+* **Object**: The object you wish to be used when scattering objects onto the levels below.
 
 Collection of Objects
 ------------------------
@@ -126,7 +127,7 @@ Collection of Objects
 
 You can also use an in-scene collection of objects the scatter onto the surface.
 
-* **Collection**: The collection of objects to be used for this layer when scattering objects onto the surface of the lower layers.
+* **Collection**: The collection of objects to be used for this level when scattering objects onto the surface of the lower levels.
 
 You can sample the objects in two ways:
 
