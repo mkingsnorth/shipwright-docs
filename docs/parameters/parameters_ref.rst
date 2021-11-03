@@ -200,7 +200,7 @@ Adding Plates
 You can optionally add a Plating effect to the objects using the |Plating Generator| Add-On.  Note that faces on the original objects need to be selected and have quad (4-sided) edges.
 
 * **Plates Random Seed**:  The random number used to generated different plating patterns.
-* **Plating Amount**: The amount of cuts to make the plate.
+* **Plating Amount**: The percentage of cuts to make the plate.
 * **Plating Groove Width**: The width of the grooves of the plates.
 * **Plating Groove Depth**: The depth of the grooves.
 * **Plating Height Random Seed**: The random number used to vary the heights of the plates.
