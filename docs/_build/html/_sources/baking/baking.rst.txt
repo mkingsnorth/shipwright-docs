@@ -8,7 +8,7 @@ Joining, Smoothing, and Baking
 .. image:: ../images/baking_intro.jpg
   :alt: A Baked Shipwright Object
 
-Because the Shipwright creates multiple objects, the joining and baking operations are designed to help you merge all these objects into one mesh and to apply smoothing operations if you choose to further sculpt or deform the image in any way.
+Because the Shipwright creates multiple objects, the joining and baking operations are designed to help you merge all these objects into one mesh and to apply smoothing operations if you choose to export the object or to further sculpt or deform the image in any way.
 
 *****************
 Joining
@@ -64,4 +64,4 @@ Baking
 If you are ready for your Shipwright object to be taken to the next stage of editing in Blender and no longer wish for it to be changed through the panel, you can perform one of the following operations:
 
 * **Remove Properties**:  This wll remove the properties from the object or objects so that the panel will no longer change it, leaving the deform lattice and any mirroring or other modifiers intact.
-* **Collapse Shipwright**: This will remove the properties and also collapse all modifiers for the Shipwright object.
+* **Collapse Shipwright**: This will remove the properties and also collapse all modifiers for the Shipwright object.  This is also needed before exporting to an **.FBX** or an **.OBJ** file.
